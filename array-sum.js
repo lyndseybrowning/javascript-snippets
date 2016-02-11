@@ -21,7 +21,7 @@ const arraySum = (arr) => {
   };
 
   const sum = (a, b) => {
-    return parseInt(a, 10) + parseInt(b, 10);
+    return a + b;
   };
 
   return arr.filter(numbers).reduce(sum, 0);
