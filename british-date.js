@@ -10,8 +10,8 @@ const formatDate = function(d, separator) {
   d = new Date(d);
   
   let year = d.getFullYear(),
-  	  month = addZero(d.getMonth() + 1),
-  	  day = addZero(d.getDate());
+      month = addZero(d.getMonth() + 1),
+      day = addZero(d.getDate());
       
   return day + separator + month + separator + year;
 };
