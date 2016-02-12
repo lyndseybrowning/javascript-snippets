@@ -1,5 +1,19 @@
 // reject items in an array
 
+const arrayReject = function(arr, callback) {
+    let output = [];
+    for(let i = 0; i<arr.length; i++) {
+        if(!callback(arr[i], i)) {
+            output.push(arr[i]);
+        };
+    }
+    return output;
+};
+
+const getDogs = function(item) {
+    return item.species === 'Dog';   
+};
+
 let items = [
     { name: "Julie", species: "Dog" },
     { name: "Jake", species: "Dog" },
@@ -10,22 +24,8 @@ let items = [
     { name: "Jessica", species: "Human" }    
 ];
 
-items.reject = function(callback) {
-    let output = [];
-    for(let i = 0; i<this.length; i++) {
-        if(!callback(this[i], i)) {
-            output.push(this[i]);
-        };
-    }
-    return output;
-}
-
-const getDogs = function(item) {
-    return item.species === 'Dog';   
-};
-
-let noDogs = items.reject(getDogs);
-let onlyDogs = items.filter(getDogs);
+const noDogs = arrayReject(items, getDogs); // show everything other than dogs
+const onlyDogs = items.filter(getDogs); // example of native .filter()
 
 console.table(noDogs);  
 console.table(onlyDogs);
