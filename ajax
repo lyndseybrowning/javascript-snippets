@@ -1,0 +1,32 @@
+const ajax = (() => {
+	function onreadystatechange(callback) {   
+  	const request = this;   
+    if(request.readyState === XMLHttpRequest.DONE) {
+      if(request.status === 200) {
+        return callback(request.responseText);
+      } else {
+        throw(`HttpRequest Error, status code: ${request.status}`);
+      }
+    }    
+  }
+  const init = (type, url, callback, params = null) => {
+  	const request = new XMLHttpRequest();
+    request.onreadystatechange = onreadystatechange.bind(request, callback);
+    request.open(type, url);
+    request.send(params);
+  };
+
+  return {
+    get(url, callback) {
+      return init('get', url, callback);
+    },    
+    post(url, params, callback) {
+    	return init('post', url, callback);
+    }
+  };		
+})();
+
+ajax.get('https://randomuser.me/api/', (data) => { 	
+	data = JSON.parse(data);
+  console.log(data);
+});
