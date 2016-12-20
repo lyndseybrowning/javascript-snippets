@@ -1,6 +1,5 @@
 // reject items in an array
-
-const arrayReject = function(arr, callback) {
+const arrayReject = (arr, callback) => {
     let output = [];
     for(let i = 0; i<arr.length; i++) {
         if(!callback(arr[i], i)) {
@@ -10,7 +9,7 @@ const arrayReject = function(arr, callback) {
     return output;
 };
 
-const getDogs = function(item) {
+const getDogs = (item) => {
     return item.species === 'Dog';   
 };
 
