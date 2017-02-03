@@ -1,7 +1,6 @@
-﻿const reduce = (array, fn, accumulator) => {
+const reduce = (array, fn, accumulator) => {
   for (let i = 0, len = array.length; i < len; i++) {
     accumulator = fn(accumulator, array[i], array);
-    fn(accumulator, array[i], array);
   }
   return accumulator;
 };
