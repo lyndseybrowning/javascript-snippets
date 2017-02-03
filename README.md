@@ -142,4 +142,17 @@ console.log(singleDigits); // true
 console.log(greaterThan10); // false
 ```
 
+## array-reduce 
 
+Custom version of [Array.reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
+
+Example:
+
+```javascript
+const array = [1, 2, 3, 4, 5];
+const sumReduce = reduce(array, (acc, cur) => acc + cur, 0);
+const reduceToString = reduce(array, (acc, cur) => acc += cur, '');
+
+console.log(sumReduce); // 15
+console.log(reduceToString); // 12345
+```
