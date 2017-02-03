@@ -1,2 +1,6 @@
-# js-helpers
-JavaScript helpers for every day use
+# JavaScript Snippets
+
+Short JavaScript snippets.
+
+Created for educational purposes.
+
