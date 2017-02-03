@@ -88,6 +88,16 @@ Multiple methods for duplicating values of an array using different techniques s
 - [ES6 spread operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator)
 - [Array.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
+Example using ES6 spread:
+
+```javascript
+const duplicateSpread = (array) => {
+  const duplicate = [...array, ...array];
+
+  return duplicate.sort();
+};
+```
+
 # Custom Array methods
 
 Made to further my understanding of existing array methods and callback functions.
