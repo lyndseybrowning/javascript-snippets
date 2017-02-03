@@ -54,7 +54,7 @@ arrayReject(array, (item) => item === 1); // [2, 3, 4, 5];
 
 ## array-sum
 
-Sums all numeric values in an array using [Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) to filter out numeric values and [Array.reduce(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)]() to sum. Example:
+Sums all numeric values in an array using [Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) to filter out numeric values and [Array.reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) to sum. Example:
 
 ```javascript
 arraySum([1, 2, 3, 4, 'a']); // 10
