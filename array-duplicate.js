@@ -1,4 +1,4 @@
-﻿const duplicateReduce = (array) => {
+const duplicateReduce = (array) => {
   return array.reduce((acc, current) => {
     acc.push.apply(acc, [current, current]);
 
@@ -29,7 +29,7 @@ const duplicateLoop = (array) => {
 const array = [1, 2, 3];
 const reducer = duplicateReduce(array);
 const concat = duplicateConcat(array);
-const other = duplicateSpread(array);
+const spread = duplicateSpread(array);
 const loop = duplicateLoop(array);
 
 // all of the below produce [1, 1, 2, 2, 3, 3]
