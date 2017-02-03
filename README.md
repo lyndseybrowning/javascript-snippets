@@ -82,4 +82,8 @@ getModulus(20, 3); // 2
 
 Made to further my understanding of existing array methods and callback functions.
 
+## array-foreach 
+
+custom version of [Array.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach).
+
 
