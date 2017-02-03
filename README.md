@@ -156,3 +156,16 @@ const reduceToString = reduce(array, (acc, cur) => acc += cur, '');
 console.log(sumReduce); // 15
 console.log(reduceToString); // 12345
 ```
+
+## array-map 
+
+Custom version of [Array.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
+
+Example:
+
+```javascript
+const array = [1, 2, 3, 4, 5];
+const doubleAll = map(array, item => item * 2);
+
+console.log(doubleAll); // [2, 4, 6, 8, 10]
+```
