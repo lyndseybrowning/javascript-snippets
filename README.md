@@ -20,11 +20,12 @@ findAjacents([0, 0]); // [ [0,1], [1,0], [1, 1] ]
 
 ## array-match
 
-Determines if two arrays are the same, for example:
+Determines if two arrays are exactly the same, for example:
 
 ```javascript
 arrayMatch([1,1], [1,1]); // true
 arrayMatch([1,0], [1,1]); // false
+arrayMatch([1, '0'], [1, 0]); // false
 ```
 
 ## array-occurrences
@@ -86,9 +87,19 @@ Made to further my understanding of existing array methods and callback function
 
 Custom version of [Array.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach).
 
+This method takes an existing array and performs a callback function on each item in turn.
+
+```javascript
+forEach([1, 2, 3, 4, 5], (item) => {
+  console.log(item); // 1, 2, 3, 4, 5
+});
+```
+
 ## array-filter 
 
 Custom version of [Array.filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter).
+
+This method takes an existing array and returns a new array with the items that comply with the callback function.
 
 Example:
 
@@ -105,18 +116,22 @@ console.log(divisibleByTwo); // [2, 4]
 
 Custom version of [Array.find](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find).
 
+This method finds the first instance of an item that passes the callback function (truthy).
+
 Example:
 
 ```javascript
 const array = [1, 2, 3, 4, 5];
 const findGreaterThan3 = find(array, item => item > 3);
 
-console.log(findGreaterThan3); // [4, 5]
+console.log(findGreaterThan3); // 4
 ```
 
 ## array-findIndex
 
 Custom version of [Array.findIndex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex).
+
+This method is the same as ```Array.find``` but the index of the first instance of an item is found, instead of the item itself.
 
 Example:
 
@@ -130,6 +145,8 @@ console.log(findGreaterThan3Index); // 3
 ## array-every
 
 Custom version of [Array.every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every).
+
+Returns a ```Boolean``` that indicates if each item in the array passed the callback function.
 
 Example:
 
@@ -146,6 +163,10 @@ console.log(greaterThan10); // false
 
 Custom version of [Array.reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
 
+The reduce method takes an existing array, a callback function to be acted upon each element and an initial value. The existing array is reduced down to a single value; its type is determined by the initial value. 
+
+The result of the previous iteration is passed to the next iteration and thus an accumulator is created.
+
 Example:
 
 ```javascript
@@ -160,6 +181,8 @@ console.log(reduceToString); // 12345
 ## array-map 
 
 Custom version of [Array.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
+
+This method takes an array and performs a callback function on each element in the array that transforms it, producing a new array of mapped values.
 
 Example:
 
