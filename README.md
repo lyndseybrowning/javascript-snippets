@@ -101,4 +101,29 @@ const divisibleByTwo = filter(array, (item, index) => {
 console.log(divisibleByTwo); // [2, 4]
 ```
 
+## array-find 
+
+custom version of [Array.find](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find).
+
+Example:
+
+```javascript
+const array = [1, 2, 3, 4, 5];
+const findGreaterThan3 = find(array, item => item > 3);
+
+console.log(findGreaterThan3); // [4, 5]
+```
+
+## array-findIndex
+
+custom version of [Array.findIndex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex).
+
+Example:
+
+```javascript
+const array = [1, 2, 3, 4, 5];
+const findGreaterThan3Index = findIndex(array, item => item > 3);
+
+console.log(findGreaterThan3Index); // 3
+```
 
