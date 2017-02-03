@@ -96,6 +96,9 @@ const duplicateSpread = (array) => {
 
   return duplicate.sort();
 };
+
+const array = [1, 2, 3];
+console.log(duplicateSpread(array)); // [1, 1, 2, 2, 3, 3]
 ```
 
 # Custom Array methods
