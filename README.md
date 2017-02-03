@@ -127,3 +127,19 @@ const findGreaterThan3Index = findIndex(array, item => item > 3);
 console.log(findGreaterThan3Index); // 3
 ```
 
+## array-every
+
+custom version of [Array.every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every).
+
+Example:
+
+```javascript
+const array = [1, 2, 3, 4, 5];
+const singleDigits = every(array, item => item < 10);
+const greaterThan10 = every(array, item => item > 10);
+
+console.log(singleDigits); // true
+console.log(greaterThan10); // false
+```
+
+
