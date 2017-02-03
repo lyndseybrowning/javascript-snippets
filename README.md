@@ -79,6 +79,15 @@ Calculate modulus with modulus operator and without:
 getModulus(20, 3); // 2
 ```
 
+## array-duplicate
+
+Multiple methods for duplicating values of an array using different techniques such as:
+
+- [Array.reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+- [Array.concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
+- [ES6 spread operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator)
+- [Array.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
 # Custom Array methods
 
 Made to further my understanding of existing array methods and callback functions.
