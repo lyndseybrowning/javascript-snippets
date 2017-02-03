@@ -165,7 +165,7 @@ console.log(findGreaterThan3Index); // 3
 
 Custom version of [Array.every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every).
 
-Returns a ```Boolean``` that indicates if each item in the array passed the callback function.
+Returns truthy if **every** item in the array passed the callback function.
 
 Example:
 
