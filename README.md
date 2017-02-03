@@ -86,4 +86,19 @@ Made to further my understanding of existing array methods and callback function
 
 custom version of [Array.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach).
 
+## array-filter 
+
+custom version of [Array.filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter).
+
+Example:
+
+```javascript
+const array = [1, 2, 3, 4, 5];
+const divisibleByTwo = filter(array, (item, index) => {
+	return item % 2 === 0;
+});
+
+console.log(divisibleByTwo); // [2, 4]
+```
+
 
