@@ -101,6 +101,26 @@ const array = [1, 2, 3];
 console.log(duplicateSpread(array)); // [1, 1, 2, 2, 3, 3]
 ```
 
+## convert-querystring
+
+Takes a querystring and converts it to an object e.g.
+
+```javascript
+const convert = convertQueryString('first_name=lyndsey&last_name=browning&likes=javascript&likes=react&likes=sass');
+
+/*
+{
+  first_name: 'Lyndsey',
+  last_name: 'Browning',
+  likes: [
+    'javascript',
+	'react',
+	'sass'
+  ]
+}
+*/
+```
+
 # Custom Array methods
 
 Made to further my understanding of existing array methods and callback functions.
