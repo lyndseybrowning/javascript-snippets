@@ -121,6 +121,16 @@ const convert = convertQueryString('first_name=lyndsey&last_name=browning&likes=
 */
 ```
 
+## string-permutations
+
+Find all permutations of a given string, e.g.
+
+```javascript
+const permutations = permute('abcd');
+
+console.log(permutations); // ["abc", "acb", "bac", "bca", "cab", "cba"]
+```
+
 # Custom Array methods
 
 Made to further my understanding of existing array methods and callback functions.
