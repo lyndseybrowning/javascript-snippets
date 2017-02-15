@@ -157,6 +157,40 @@ const permutations = permute('abc');
 console.log(permutations); // ["abc", "acb", "bac", "bca", "cab", "cba"]
 ```
 
+## object-deep-clone
+
+Deep clone an object preventing the original input being mutated.
+
+```javascript
+const source = {
+	name: 'Lyndsey',
+  age: 30,
+  likes: ['javascript', 'css'],
+  other: {
+  	color: 'orange'
+  }
+};
+```
+
+Example standard shallow-clone using ```Object.assign```:
+
+```javascript
+const shallow = Object.assign({}, source);
+shallow.other.color = 'red';
+
+console.log(source.other.color); // red. obj is mutated!
+```
+
+Example using deep clone method:
+
+```javascript
+const cloned = clone(source);
+cloned.other.color = 'red';
+
+console.log(source.other.color);  // orange
+console.log(cloned.other.color); // red
+```
+
 # Custom Array methods
 
 Made to further my understanding of existing array methods and callback functions.
