@@ -188,7 +188,7 @@ Example using deep clone method:
 const cloned = clone(source);
 cloned.other.color = 'red';
 
-console.log(source.other.color);  // orange
+console.log(source.other.color); // orange
 console.log(cloned.other.color); // red
 ```
 
