@@ -13,6 +13,7 @@
   - [array-duplicate](#array-duplicate)
   - [convert-querystring](#convert-querystring)
   - [string-permutations](#string-permutations)
+  - [object-deep-clone](#object-deep-clone)
 - [Custom Array methods](#custom-array-methods)
   - [array-foreach](#array-foreach)
   - [array-filter](#array-filter)
