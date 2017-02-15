@@ -1,3 +1,29 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [JavaScript Snippets](#javascript-snippets)
+  - [array-adjacents](#array-adjacents)
+  - [array-match](#array-match)
+  - [array-occurrences](#array-occurrences)
+  - [array-reject](#array-reject)
+  - [array-sum](#array-sum)
+  - [british-date](#british-date)
+  - [modulus](#modulus)
+  - [array-duplicate](#array-duplicate)
+  - [convert-querystring](#convert-querystring)
+  - [string-permutations](#string-permutations)
+- [Custom Array methods](#custom-array-methods)
+  - [array-foreach](#array-foreach)
+  - [array-filter](#array-filter)
+  - [array-find](#array-find)
+  - [array-findIndex](#array-findindex)
+  - [array-every](#array-every)
+  - [array-reduce](#array-reduce)
+  - [array-map](#array-map)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # JavaScript Snippets
 
 Short JavaScript snippets.
@@ -135,7 +161,7 @@ console.log(permutations); // ["abc", "acb", "bac", "bca", "cab", "cba"]
 
 Made to further my understanding of existing array methods and callback functions.
 
-## array-foreach 
+## array-foreach
 
 Custom version of [Array.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach).
 
@@ -147,7 +173,7 @@ forEach([1, 2, 3, 4, 5], (item) => {
 });
 ```
 
-## array-filter 
+## array-filter
 
 Custom version of [Array.filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter).
 
@@ -164,7 +190,7 @@ const divisibleByTwo = filter(array, (item, index) => {
 console.log(divisibleByTwo); // [2, 4]
 ```
 
-## array-find 
+## array-find
 
 Custom version of [Array.find](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find).
 
@@ -211,11 +237,11 @@ console.log(singleDigits); // true
 console.log(greaterThan10); // false
 ```
 
-## array-reduce 
+## array-reduce
 
 Custom version of [Array.reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
 
-The reduce method takes an existing array, a callback function to be acted upon each element and an initial value. The existing array is reduced down to a single value; its type is determined by the initial value. 
+The reduce method takes an existing array, a callback function to be acted upon each element and an initial value. The existing array is reduced down to a single value; its type is determined by the initial value.
 
 The result of the previous iteration is passed to the next iteration and thus an accumulator is created.
 
@@ -230,7 +256,7 @@ console.log(sumReduce); // 15
 console.log(reduceToString); // 12345
 ```
 
-## array-map 
+## array-map
 
 Custom version of [Array.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
 
