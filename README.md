@@ -164,7 +164,7 @@ Deep clone an object preventing the original input being mutated.
 
 ```javascript
 const source = {
-	name: 'Lyndsey',
+  name: 'Lyndsey',
   age: 30,
   likes: ['javascript', 'css'],
   other: {
